@@ -53,6 +53,16 @@
 
             <h1 class="page-title">{{ .Site.Title }}</h1>
             <h2 class="page-description">{{ .Site.Params.description }}</h2>
+
+
+            {{ if .Site.Params.myApps }}
+                <h3 class="myapps-title">{{ .Site.Params.myApps }}</h3>
+                <a class="myapps-app" href="{{ .Site.Params.myApp1Url }}" target="_blank">
+                    <img src="{{ .Site.Params.myApp1Image }}">
+                    <span>{{ .Site.Params.myApp1Name }}</span>
+                </a>
+            &nbsp;
+            {{end}}
         </div>
     </div>
 </header>
