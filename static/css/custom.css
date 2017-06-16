@@ -18,7 +18,8 @@ a:hover.myapps-app {
 }
 .myapps-app > img {
 	width: 60px;
-	height: 60px
+	height: 60px;
+	border-radius: 13px;
 }
 .myapps-app > span {
 	display:block;
