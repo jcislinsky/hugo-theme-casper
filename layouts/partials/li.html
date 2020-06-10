@@ -7,7 +7,7 @@
         <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
     </section>
     <footer class="post-meta">
-        {{$author := index .Site.Data.authors .Params.author }}
+        {{$author := .Params.author }}
         {{ if isset $author "thumbnail" }}
             <img class="author-thumb" src="{{ .Site.BaseURL }}{{ $author.thumbnail }}" alt="Author image" nopin="nopin" />
         {{else if .Site.Params.logo }}
